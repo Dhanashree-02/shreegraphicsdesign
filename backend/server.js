@@ -4,7 +4,8 @@ const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 require('dotenv').config();
-
+const serverless = require("serverless-http");
+ 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -56,6 +57,12 @@ app.use('/api/custom-design-orders', require('./routes/customDesignOrders'));
 app.use('/api/uploads', require('./routes/uploads'));
 app.use('/api', require('./routes/reviewRoutes'));
 
+
+app.get("/api/hello", (req, res) => {
+  res.json({ message: "Hello from Vercel Serverless!" });
+});
+
+
 // Health check endpoint
 app.get('/api/health', (req, res) => {
   res.json({
@@ -86,4 +93,6 @@ app.listen(PORT, () => {
   console.log(`🗄️ MongoDB connected to local database`);
 });
 
+
 module.exports = app;
+module.exports.handler = serverless(app);
