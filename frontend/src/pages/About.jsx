@@ -1,3 +1,10 @@
+import Sheela from '../assets/Team/Sheela.jpeg'
+import Kavita from "../assets/Team/Kavita.jpeg"
+import Sunil from '../assets/Team/Sunil.jpeg'
+import Shahaji from '../assets/Team/Shahaji.jpeg'
+import Shubham from "../assets/Team/Shubham.jpeg"
+import Shailesh from "../assets/Team/Sailesh.jpeg"
+
 import { CheckCircleIcon, UserGroupIcon, TrophyIcon } from '@heroicons/react/24/outline'
 
 const About = () => {
@@ -28,23 +35,41 @@ const About = () => {
 
   const team = [
     {
-      name: 'Rajesh Sharma',
-      role: 'Founder & Creative Director',
-      image: 'https://i.pinimg.com/736x/e9/c5/1a/e9c51a0a6819c3b0032b44c46fd199b0.jpg',
-      description: 'With over 10 years of experience in graphic design and branding.'
+      name: 'Kavita Sunil Gopale ',
+      // role: 'Founder & Creative Director',
+      image: Kavita,
+      // description: 'With over 10 years of experience in graphic design and branding.'
     },
     {
-      name: 'Priya Patel',
-      role: 'Senior Designer',
-      image: 'https://i.pinimg.com/736x/ca/8b/bb/ca8bbb8771bdd2f60b6098b6e1497a39.jpg',
-      description: 'Specializes in logo design and brand identity development.'
+      name: 'Sheela Hemant Lankhe',
+      // role: 'Senior Designer',
+      image: Sheela ,
+      // description: 'Specializes in logo design and brand identity development.'
     },
     {
-      name: 'Amit Kumar',
-      role: 'Embroidery Specialist',
-      image: 'https://i.pinimg.com/736x/e9/c5/1a/e9c51a0a6819c3b0032b44c46fd199b0.jpg',
-      description: 'Expert in custom embroidery and textile design solutions.'
-    }
+      name: 'Sunil Yashwant Gopale',
+      // role: 'Embroidery Specialist',
+      image: Sunil,
+      // description: 'Expert in custom embroidery and textile design solutions.'
+    },
+    {
+      name: 'Shailesh Shaha Lamkhade',
+      // role: 'Embroidery Specialist',
+      image: Shailesh,
+      // description: 'Expert in custom embroidery and textile design solutions.'
+    },
+    {
+      name: 'Shubham Balaso Mane',
+      // role: 'Embroidery Specialist',
+      image: Shubham,
+      // description: 'Expert in custom embroidery and textile design solutions.'
+    },
+    {
+      name: 'Shahaji Maliba Lamkhade',
+      // role: 'Embroidery Specialist',
+      image: Shahaji,
+      // description: 'Expert in custom embroidery and textile design solutions.'
+    },
   ]
 
   return (
